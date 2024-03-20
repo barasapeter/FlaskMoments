@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn, motherfucker!</title>
+</head>
+
+<body>
+    {{ moment.include_moment() }}
+    <p>Local day and time is {{ moment(current_time).format('LLL') }}</p>
+	<p>That was {{ moment(current_time).fromNow(refresh=True) }}</p>
+</body>
+
+</html>
